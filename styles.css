@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Overpass:wght@400;700&display=swap');
+
+body{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    background: hsl(36, 100%, 99%);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+nav > ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.imagediv{
+    padding: 50px;
+}
+
+.imagediv > img{
+    object-fit: contain;
+    width: 63%;
+}
+
+aside{
+    position: absolute;
+    right: 0;
+    top: 202px;
+    padding: 20px 25px;
+    width: 28%;
+    font-size: 15px;
+    margin-right: 40px;
+    background: hsl(240, 100%, 5%);
+    color: aliceblue;
+}
+
+aside > h2{
+    color: hsl(35, 77%, 62%);
+}
+
+.opaque{
+    opacity: 0.6;
+}
+
+hr{
+    opacity: 0.4;
+    margin: 30px 0px;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: unset;
+    width: 55%;
+    padding: 0px 50px;
+    gap: 40px;
+    margin-top: -95px;
+    align-items: end;
+    justify-items: center;
+}
+
+.container > h3{
+    font-weight: 900;
+    font-size: 31px;
+}
+
+
+.button{
+    background-color: hsl(5, 85%, 63%);
+    border: 1px solid;
+    padding: 10px;
+    color: aliceblue;
+    display: inline-block;
+    margin-top: 0px;
+    width: 50%;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    top: -20px;
+}
+
+.popular{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap: 0px;
+    margin-top: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.images{
+    object-fit: fill;
+    height: 100px;
+    padding: 20px;
+}
+
+.numbers{
+    color: hsl(236, 13%, 42%);
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.attribution{
+    text-align: center;
+}
+
+/*hover states*/
+nav > ul > li:hover, b:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: hsl(240, 100%, 5%);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+h4:hover{
+ color: hsl(35, 77%, 62%);
+ cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+    nav > ul {
+        display: flex;
+        gap: 5px;
+        list-style-type: none;
+        opacity: 0.7;
+        font-size: 14px;
+        flex-flow: column;
+        margin-top: -10px;
+    }
+    .container {
+        display: block;
+        padding: 0px 10px;
+        margin-top: -60px;
+        width: unset;
+    }
+    .imagediv{
+        padding: 10px;
+    }
+    .imagediv > img {
+        object-fit: contain;
+        width: 100%;
+        margin-top: -50px;
+    }
+    aside {
+        position: unset;
+        /* right: 0; */
+        /* top: 202px; */
+        padding: 10px 36px;
+        width: unset;
+        font-size: 15px;
+        margin: 0 auto;
+        background: hsl(240, 100%, 5%);
+        color: aliceblue;
+    }
+    .popular {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        gap: 0px;
+        margin-top: 60px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }  
+    .adjust{
+        margin-top: -25px;
+    }
+}
